@@ -14,14 +14,14 @@ export class MarketplaceComponent implements OnInit {
   players: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
 
-  constructor(private router: Router, private productService: PlayerService) { }
+  constructor(private router: Router, private playerService: PlayerService) { }
 
   ngOnInit() {
     this.players = this.playerService.getPlayers();
   // console.log(this.router.url);
   }
 
-  goToDetailPage(clickedProduct) {
+  goToDetailPage(clickedPlayer) {
    this.router.navigate(['players', clickedPlayer.$key]);
   };
 

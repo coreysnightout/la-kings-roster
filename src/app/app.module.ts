@@ -10,6 +10,7 @@ import { routing } from './app.routing';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
+import { EditPlayerComponent } from './edit-player/edit-player.component';
  // database
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
@@ -26,7 +27,8 @@ export const firebaseConfig = {
     AppComponent,
     WelcomeComponent,
     AboutComponent,
-    MarketplaceComponent
+    MarketplaceComponent,
+    EditPlayerComponent
     // AdminComponent,
     // ProductDetailComponent,
     // EditProductComponent
