@@ -1,3 +1,14 @@
-<p>
-  marketplace works!
-</p>
+<h2>Marketplace</h2>
+<div class="work">
+  <div *ngFor="let player of players | async" class="panel panel-default">
+    <div class="items panel-body">
+      <img src="{{player.image}}" alt="" />
+      <h3 (click)="goToDetailPage(player)"><em>{{player.name}}</em> $ {{player.age}}</h3>
+      <div *ngIf="currentRoute === '/admin'">
+        {{player.position}}
+        <hr>
+        <app-edit-player [selectedPlayer]="player"></app-edit-player>
+      </div>
+    </div>
+  </div>
+</div>
