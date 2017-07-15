@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
 import { EditPlayerComponent } from './edit-player/edit-player.component';
 import { PlayerDetailComponent } from './player-detail/player-detail.component';
+import { AdminComponent } from './admin/admin.component';
  // database
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
@@ -30,10 +31,8 @@ export const firebaseConfig = {
     AboutComponent,
     MarketplaceComponent,
     EditPlayerComponent,
-    PlayerDetailComponent
-    // AdminComponent,
-    // ProductDetailComponent,
-    // EditProductComponent
+    PlayerDetailComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,

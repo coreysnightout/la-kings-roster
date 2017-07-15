@@ -1,0 +1,44 @@
+<h3>Add New Player to Roster</h3>
+<div>
+  <div>
+    <label>Player Name:</label>
+    <br>
+    <input #newPlayer>
+  </div>
+
+  <div>
+    <label>Player Age:</label>
+    <br>
+    <input #newAge>
+  </div>
+
+  <div>
+    <label>Player Position:</label>
+    <br>
+    <textarea #newPosition></textarea>
+  </div>
+
+  <div>
+    <label>Player Number:</label>
+    <br>
+    <textarea #newNumber></textarea>
+  </div>
+
+  <div>
+    <label>Player Birthplace:</label>
+    <br>
+    <textarea #newBirthplace></textarea>
+  </div>
+
+  <div>
+    <label>Player Image URL:</label>
+    <br>
+    <textarea #newImage></textarea>
+  </div>
+</div>
+
+ <button (click)="submitForm(newPlayer.value, newAge.value, newPosition.value, newNumber.value, newBirthplace.value, newImage.value); newPlayer.value=''; newAge.value=''; newPosition.value=''; newNumber.value=''; newBirthplace.value=''; newImage='' ">Add</button>
+
+<div>
+ <app-marketplace></app-marketplace>
+</div>

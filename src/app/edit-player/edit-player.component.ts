@@ -7,6 +7,7 @@ import { PlayerService } from '../player.service';
   styleUrls: ['./edit-player.component.css'],
   providers: [PlayerService]
 })
+
 export class EditPlayerComponent implements OnInit {
   @Input() selectedPlayer;
 
@@ -14,6 +15,7 @@ export class EditPlayerComponent implements OnInit {
 
   ngOnInit() {
   }
+
   beginUpdatingPlayer(playerToUpdate){
     this.playerService.updatePlayer(playerToUpdate);
   }
