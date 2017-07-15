@@ -11,6 +11,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
 import { EditPlayerComponent } from './edit-player/edit-player.component';
+import { PlayerDetailComponent } from './player-detail/player-detail.component';
  // database
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
@@ -28,7 +29,8 @@ export const firebaseConfig = {
     WelcomeComponent,
     AboutComponent,
     MarketplaceComponent,
-    EditPlayerComponent
+    EditPlayerComponent,
+    PlayerDetailComponent
     // AdminComponent,
     // ProductDetailComponent,
     // EditProductComponent

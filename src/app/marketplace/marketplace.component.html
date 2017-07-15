@@ -3,9 +3,9 @@
   <div *ngFor="let player of players | async" class="panel panel-default">
     <div class="items panel-body">
       <img src="{{player.image}}" alt="" />
-      <h3 (click)="goToDetailPage(player)"><em>{{player.name}}</em> $ {{player.age}}</h3>
+      <h3 (click)="goToDetailPage(player)"><em>{{player.name}}</em> #{{player.number}} {{player.position}}</h3>
       <div *ngIf="currentRoute === '/admin'">
-        {{player.position}}
+        {{player.birthplace}}
         <hr>
         <app-edit-player [selectedPlayer]="player"></app-edit-player>
       </div>
